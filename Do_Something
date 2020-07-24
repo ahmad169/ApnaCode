@@ -1,0 +1,519 @@
+print("""
+1.Calculator
+2.Chatbot
+""")
+option = input("""
+Please choose the project!!!
+-> """)
+
+if option == '1':
+    import math
+
+    print("""Calculator
+
+    -Ahmad Raza """)
+
+
+    def gcd(x, y):
+        math.gcd(x, y)
+
+
+    def absolute(x):
+        return abs(x)
+
+
+    def power(x, y):
+        return x ** y
+
+
+    def add(x, y):
+        return x + y
+
+
+    def subtract(x, y):
+        return x - y
+
+
+    def multiply(x, y):
+        return x * y
+
+
+    def divide(x, y):
+        return x / y
+
+
+    print("""
+    Select operation.
+    1.Add
+    2.Subtract
+    3.Multiply
+    4.Divide
+    5.Power
+    6.Absolute Value(It will only use the "First no.")
+    -> """)
+
+    choice = input("Enter choice(1/2/3/4/5/6): ")
+    choice.upper()
+
+    num1 = int(input("Enter first number: "))
+
+    num2 = int(input("Enter second number: "))
+
+    if choice == '1':
+        print(num1, " + ", num2, " = ", add(num1, num2))
+
+    elif choice == '2':
+        print(num1, " - ", num2, " = ", subtract(num1, num2))
+
+    elif choice == '3':
+        print(num1, " * ", num2, " = ", multiply(num1, num2))
+
+    elif choice == '4':
+        print(num1, "/", num2, " = ", divide(num1, num2))
+
+    elif choice == '5':
+        print(num1, " ** ", num2, " = ", power(num1, num2))
+
+    elif choice == '6':
+        print(num1, " = ", absolute(num1))
+
+    else:
+        print("Invalid Input!!!")
+
+
+if option == '2':
+    print("""(Alex(Beta Version) By Reyaansh Jhaveri!!!)
+
+    """)
+
+    name = input("""Hello my name is Alex(Beta Version)!
+    I am your new personal A.I!
+    Please Tell me your name!
+    -> """)
+
+    print(f'''Nice to meet you {name}!
+    ''')
+
+    print("""
+        How May I Help You?:-
+
+        1.Order Pizzas!
+        2.Make a sentence on favourite colour
+        3.Call Someone
+        4.Book A Cab
+        5.Message Someone
+        6.Activate Car Service Reminders
+        7.Book A Movie Ticket
+        8.Add a Reminder
+        """)
+
+    a = input("Please Write The Task!!! (1/2/3/4/5/6/7/8) -> ")
+
+    if a == "1":
+        pizza = input("""
+        Please Write The Pizza You Want To Order!!!
+
+        (Please Write Only The Pizza's Name. Don't End It With The Word Pizza!!!)
+
+        -> """)
+
+        print(f"""
+    Ordering A {pizza} Pizza!!!
+    """)
+
+    if a == '2':
+        color = input("""
+        Please Write Your Favourite Colour!!!
+        """)
+
+        print(f"""
+    {name} likes the colour {color}!!!
+    """)
+
+    if a == '3':
+        call = input(f"""
+    Please tell me who you want to call {name}!!!
+    """)
+
+        print(f"""
+    Calling {call}!!!
+    """)
+
+    if a == '4':
+        cab = input("""
+        Please write what Cab service would you prefer?
+
+        1.Jugnoo
+        2.Ola
+        3.Uber
+        4.Meru
+        5.Carzonrent
+        6.Savaari
+
+        Please choose the service by writing (1/2/3/4/5/6):-
+
+        -> 
+        """)
+
+        if cab == '1':
+            print("""
+            Booking A Jugnoo Cab For You It Will Reach Home In 5 Mins!!!
+            """)
+
+        if cab == '2':
+            print("""
+            Booking A Ola Cab For You It Will Reach Home In 5 Mins!!!
+            """)
+
+        if cab == '3':
+            print("""
+            Booking A Uber Cab For You It Will Reach Home In 5 Mins!!!
+            """)
+
+        if cab == '4':
+            print("""
+            Booking A Meru Cab For You It Will Reach Home In 5 Mins!!!
+            """)
+
+        if cab == '5':
+            print("""
+            Booking A Carzonrent Cab For You It Will Reach Home In 5 Mins!!!
+            """)
+
+        if cab == '6':
+            print("""
+            Booking A Savaari Cab For You It Will Reach Home In 5 Mins!!!
+            """)
+
+    if a == '5':
+        reciever = input("""
+        Please Write Whom You Want To Send The Message !!!
+
+        -> 
+        """)
+
+        message = input(""""
+        Please Write Your Message!!!
+
+        -> 
+        """)
+
+        print(f"""
+    Sending Message to {reciever}!!!
+    """)
+
+    if a == '6':
+        print("""
+        Car Reminders Activated!!!
+        """)
+
+    if a == '7':
+        movie = input("""
+        Please Write Which Movie You Want To See!!!
+        """)
+
+        timing = input("""
+        Please Write The Time You Want To Book The Show!!!
+        """)
+
+        tickets = input("""4
+        Please Write How Many Tickets You Want To Buy!!!
+        """)
+
+        print(f"""
+    Booked {tickets} for {movie} at {timing}!!!
+    """)
+
+    if a == '8':
+        note = input("""
+        Please Write Your Note!!!
+
+        -> 
+        """)
+
+        date = input("""
+        Please Set The Date Of The Reminder!!! 
+
+        -> 
+        """)
+
+        time = input("""
+        Please Set Time Of The Reminder!!!
+        """)
+
+        print(f"""
+        Reminder Set For Date: {date} And Time: {time}
+        """)
+
+    else:
+        print("""
+        I don't Understand That!!!
+        """)
+
+    print("""
+    Thank You For Trying Alex(Beta Version)!!!
+
+    -Ahmad Raza
+    """)
+
+else:
+print("""
+1.Calculator
+2.Chatbot
+""")
+option = input("""
+Please choose the project!!!
+-> """)
+
+if option == '1':
+    import math
+
+    print("""Calculator
+
+    -Reyaansh Jhaveri""")
+
+
+    def gcd(x, y):
+        math.gcd(x, y)
+
+
+    def absolute(x):
+        return abs(x)
+
+
+    def power(x, y):
+        return x ** y
+
+
+    def add(x, y):
+        return x + y
+
+
+    def subtract(x, y):
+        return x - y
+
+
+    def multiply(x, y):
+        return x * y
+
+
+    def divide(x, y):
+        return x / y
+
+
+    print("""
+    Select operation.
+    1.Add
+    2.Subtract
+    3.Multiply
+    4.Divide
+    5.Power
+    6.Absolute Value(It will only use the "First no.")
+    -> """)
+
+    choice = input("Enter choice(1/2/3/4/5/6): ")
+    choice.upper()
+
+    num1 = int(input("Enter first number: "))
+
+    num2 = int(input("Enter second number: "))
+
+    if choice == '1':
+        print(num1, " + ", num2, " = ", add(num1, num2))
+
+    elif choice == '2':
+        print(num1, " - ", num2, " = ", subtract(num1, num2))
+
+    elif choice == '3':
+        print(num1, " * ", num2, " = ", multiply(num1, num2))
+
+    elif choice == '4':
+        print(num1, "/", num2, " = ", divide(num1, num2))
+
+    elif choice == '5':
+        print(num1, " ** ", num2, " = ", power(num1, num2))
+
+    elif choice == '6':
+        print(num1, " = ", absolute(num1))
+
+    else:
+        print("Invalid Input!!!")
+
+
+if option == '2':
+    print("""(Alex(Beta Version) By Ahmad Raza!!!)
+
+    """)
+
+    name = input("""Hello my name is Alex(Beta Version)!
+    I am your new personal A.I!
+    Please Tell me your name!
+    -> """)
+
+    print(f'''Nice to meet you {name}!
+    ''')
+
+    print("""
+        How May I Help You?:-
+
+        1.Order Pizzas!
+        2.Make a sentence on favourite colour
+        3.Call Someone
+        4.Book A Cab
+        5.Message Someone
+        6.Activate Car Service Reminders
+        7.Book A Movie Ticket
+        8.Add a Reminder
+        """)
+
+    a = input("Please Write The Task!!! (1/2/3/4/5/6/7/8) -> ")
+
+    if a == "1":
+        pizza = input("""
+        Please Write The Pizza You Want To Order!!!
+
+        (Please Write Only The Pizza's Name. Don't End It With The Word Pizza!!!)
+
+        -> """)
+
+        print(f"""
+    Ordering A {pizza} Pizza!!!
+    """)
+
+    if a == '2':
+        color = input("""
+        Please Write Your Favourite Colour!!!
+        """)
+
+        print(f"""
+    {name} likes the colour {color}!!!
+    """)
+
+    if a == '3':
+        call = input(f"""
+    Please tell me who you want to call {name}!!!
+    """)
+
+        print(f"""
+    Calling {call}!!!
+    """)
+
+    if a == '4':
+        cab = input("""
+        Please write what Cab service would you prefer?
+
+        1.Jugnoo
+        2.Ola
+        3.Uber
+        4.Meru
+        5.Carzonrent
+        6.Savaari
+
+        Please choose the service by writing (1/2/3/4/5/6):-
+
+        -> 
+        """)
+
+        if cab == '1':
+            print("""
+            Booking A Jugnoo Cab For You It Will Reach Home In 5 Mins!!!
+            """)
+
+        if cab == '2':
+            print("""
+            Booking A Ola Cab For You It Will Reach Home In 5 Mins!!!
+            """)
+
+        if cab == '3':
+            print("""
+            Booking A Uber Cab For You It Will Reach Home In 5 Mins!!!
+            """)
+
+        if cab == '4':
+            print("""
+            Booking A Meru Cab For You It Will Reach Home In 5 Mins!!!
+            """)
+
+        if cab == '5':
+            print("""
+            Booking A Carzonrent Cab For You It Will Reach Home In 5 Mins!!!
+            """)
+
+        if cab == '6':
+            print("""
+            Booking A Savaari Cab For You It Will Reach Home In 5 Mins!!!
+            """)
+
+    if a == '5':
+        reciever = input("""
+        Please Write Whom You Want To Send The Message !!!
+
+        -> 
+        """)
+
+        message = input(""""
+        Please Write Your Message!!!
+
+        -> 
+        """)
+
+        print(f"""
+    Sending Message to {reciever}!!!
+    """)
+
+    if a == '6':
+        print("""
+        Car Reminders Activated!!!
+        """)
+
+    if a == '7':
+        movie = input("""
+        Please Write Which Movie You Want To See!!!
+        """)
+
+        timing = input("""
+        Please Write The Time You Want To Book The Show!!!
+        """)
+
+        tickets = input("""4
+        Please Write How Many Tickets You Want To Buy!!!
+        """)
+
+        print(f"""
+    Booked {tickets} for {movie} at {timing}!!!
+    """)
+
+    if a == '8':
+        note = input("""
+        Please Write Your Note!!!
+
+        -> 
+        """)
+
+        date = input("""
+        Please Set The Date Of The Reminder!!! 
+
+        -> 
+        """)
+
+        time = input("""
+        Please Set Time Of The Reminder!!!
+        """)
+
+        print(f"""
+        Reminder Set For Date: {date} And Time: {time}
+        """)
+
+    else:
+        print("""
+        I don't Understand That!!!
+        """)
+
+    print("""
+    Thank You For Trying Alex(Beta Version)!!!
+
+    -Reyaansh Jhaveri
+    """)
+
+#else:
+   # print("Sorry I Don't Understand That!!!")    print("Sorry I Don't Understand That!!!")
